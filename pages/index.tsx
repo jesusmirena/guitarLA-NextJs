@@ -1,9 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
+import Layout from "../components/Layout";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return <h1>hola</h1>;
+  return (
+    <Layout title="Home" description="Music blog, guitar store and more">
+      <h1>hola</h1>
+    </Layout>
+  );
 }
